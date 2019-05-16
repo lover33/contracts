@@ -1,6 +1,6 @@
 pragma solidity ^0.4.21;
 
-import 'openzeppelin-solidity/contracts/token/ERC721/ERC721Token.sol';
+import 'openzeppelin-solidity/contracts/token/ERC1155/ERC1155Token.sol';
 import 'openzeppelin-solidity/contracts/ownership/Ownable.sol';
 
 library String {
@@ -30,7 +30,7 @@ library String {
   }
 }
 
-contract Parcel is ERC721Token, Ownable {
+contract Parcel is ERC1155Token, Ownable {
   struct BoundingBox {
     int16 x1;
     int16 y1;
